@@ -7,6 +7,7 @@ import uk.tw.energy.builders.MeterReadingsBuilder;
 import uk.tw.energy.domain.ElectricityReading;
 import uk.tw.energy.domain.MeterReadings;
 import uk.tw.energy.service.MeterReadingService;
+import uk.tw.energy.service.MeterReadingServiceImpl;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,7 +24,7 @@ public class MeterReadingControllerTest {
 
     @BeforeEach
     public void setUp() {
-        this.meterReadingService = new MeterReadingService(new HashMap<>());
+        this.meterReadingService = new MeterReadingServiceImpl(new HashMap<>());
         this.meterReadingController = new MeterReadingController(meterReadingService);
     }
 

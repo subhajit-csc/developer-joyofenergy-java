@@ -20,7 +20,7 @@ public class AccountServiceTest {
         Map<String, String> smartMeterToPricePlanAccounts = new HashMap<>();
         smartMeterToPricePlanAccounts.put(SMART_METER_ID, PRICE_PLAN_ID);
 
-        accountService = new AccountService(smartMeterToPricePlanAccounts);
+        accountService = new AccountServiceImpl(smartMeterToPricePlanAccounts);
     }
 
     @Test
